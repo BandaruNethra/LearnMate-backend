@@ -6,6 +6,8 @@ flask-cors
 sqlalchemy
 flask-sqlalchemy
 pydantic
+email-validator
+typing-extensions
 openai
 groq
 python-dotenv
