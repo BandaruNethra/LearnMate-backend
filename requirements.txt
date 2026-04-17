@@ -13,3 +13,5 @@ groq
 python-dotenv
 requests
 python-multipart
+beautifulsoup4
+lxml
