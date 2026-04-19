@@ -27,6 +27,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://learnmatefrontend.netlify.app/"
 ]
 # 2. CONFIGURE MIDDLEWARE
 app.add_middleware(
