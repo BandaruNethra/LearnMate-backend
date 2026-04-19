@@ -15,3 +15,5 @@ requests
 python-multipart
 beautifulsoup4
 lxml
+python-jose[cryptography]
+passlib[bcrypt]
