@@ -24,15 +24,13 @@ import auth
 
 # 1. CREATE THE APP FIRST (Crucial!)
 app = FastAPI()
-origins = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "https://learnmatefrontend.netlify.app/"
-]
 # 2. CONFIGURE MIDDLEWARE
+@app.get("/debug-cors")
+async def debug_cors():
+    return {"message": "CORS should be working with star"}
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Allows everything
+    allow_origins=["*"],  # Allows everything
     allow_credentials=False, # Changed to False for "*" compatibility
     allow_methods=["*"],
     allow_headers=["*"],
